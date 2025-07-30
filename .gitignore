@@ -1,0 +1,5 @@
+# Automatically generated Mac OS file
+.DS_Store
+__pycache__/
+*.pyc
+.vscode/

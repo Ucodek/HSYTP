@@ -1,0 +1,530 @@
+{
+  "common": {
+    "loading": "Yükleniyor...",
+    "error": "Hata!",
+    "viewAll": "Tümünü Gör",
+    "dateTime": {
+      "today": "Bugün",
+      "yesterday": "Dün",
+      "tomorrow": "Yarın",
+      "shortDate": "{date, date, short}",
+      "longDate": "{date, date, long}",
+      "shortTime": "{time, time, short}",
+      "shortDateTime": "{date, date, short} {date, time, short}"
+    },
+    "search": {
+      "placeholder": "Hisse senetleri, piyasalar ara...",
+      "button": "Ara",
+      "clear": "Aramayı temizle",
+      "noResults": "Sonuç bulunamadı",
+      "types": {
+        "stock": "Hisse",
+        "index": "Endeks",
+        "crypto": "Kripto Para",
+        "etf": "ETF"
+      }
+    },
+    "markets": {
+      "change": "Değişim",
+      "currencies": {
+        "USD": "USD",
+        "EUR": "EUR",
+        "GBP": "GBP",
+        "JPY": "JPY",
+        "CNY": "CNY"
+      },
+      "countries": {
+        "USA": "ABD",
+        "UK": "Birleşik Krallık",
+        "EU": "Avrupa",
+        "Japan": "Japonya",
+        "China": "Çin",
+        "Germany": "Almanya",
+        "France": "Fransa"
+      }
+    },
+    "economicEvents": {
+      "previous": "Önc",
+      "forecast": "Tah",
+      "actual": "Ger",
+      "impact": {
+        "low": "Düşük",
+        "medium": "Orta",
+        "high": "Yüksek"
+      }
+    },
+    "stocks": {
+      "volume": "Hacim",
+      "price": "Fiyat",
+      "change": "Değişim",
+      "high": "Yüksek",
+      "low": "Düşük",
+      "open": "Açılış",
+      "close": "Kapanış",
+      "marketCap": "Piyasa Değeri",
+      "peRatio": "F/K Oranı",
+      "dividend": "Temettü",
+      "yield": "Getiri",
+      "eps": "HBK"
+    },
+    "news": {
+      "readMore": "Devamını oku",
+      "source": "Kaynak",
+      "publishedOn": "Yayınlanma tarihi",
+      "relatedNews": "İlgili haberler",
+      "categories": {
+        "business": "İş Dünyası",
+        "technology": "Teknoloji",
+        "markets": "Piyasalar",
+        "economy": "Ekonomi",
+        "politics": "Politika",
+        "world": "Dünya"
+      }
+    },
+    "insights": {
+      "readArticle": "Makaleyi oku",
+      "publishedOn": "Yayınlanma tarihi",
+      "relatedArticles": "İlgili makaleler",
+      "categories": {
+        "investing": "Yatırım",
+        "trading": "Alım Satım",
+        "analysis": "Analiz",
+        "markets": "Piyasalar",
+        "portfolio": "Portföy",
+        "personal": "Kişisel Finans",
+        "education": "Eğitim"
+      }
+    }
+  },
+  "auth": {
+    "login": "Giriş Yap",
+    "register": "Kayıt Ol",
+    "logout": "Çıkış Yap"
+  },
+  "navigation": {
+    "home": "Ana Sayfa",
+    "products": "Ürünler",
+    "market": "Piyasa",
+    "news": "Haberler",
+    "children": {
+      "portfolioOptimization": {
+        "title": "Portföy Optimizasyonu",
+        "description": "Yatırım portföyünüzü optimize etmek için gelişmiş araçlar ve analizler."
+      },
+      "marketAnalysis": {
+        "title": "Piyasa Analizi",
+        "description": "Gerçek zamanlı piyasa verileri ve kapsamlı hisse senedi analiz araçları."
+      },
+      "investmentInsights": {
+        "title": "Yatırım İçgörüleri",
+        "description": "Yatırım hedeflerinize dayalı yapay zeka destekli öneriler."
+      },
+      "tradingAlerts": {
+        "title": "Alım Satım Uyarıları",
+        "description": "Piyasa hareketleri ve fırsatlar hakkında anlık bildirimler."
+      }
+    }
+  },
+  "products": {
+    "portfolioOptimization": {
+      "title": "Portföy Optimizasyonu",
+      "description": "Yatırım portföyünüzü optimize etmek için gelişmiş araçlar ve analizler.",
+      "cta": "Optimizasyon Yap"
+    },
+    "marketAnalysis": {
+      "title": "Piyasa Analizi",
+      "description": "Gerçek zamanlı piyasa verileri ve kapsamlı hisse senedi analiz araçları.",
+      "cta": "Analiz Yap"
+    },
+    "portfolioTracker": {
+      "title": "Portföy Takipçisi",
+      "description": "Akıllı portföy araçlarıyla yatırımlarınızı izleyin ve optimize edin.",
+      "cta": "Takip Et"
+    },
+    "investmentInsights": {
+      "title": "Yatırım İçgörüleri",
+      "description": "Yatırım hedeflerinize dayalı yapay zeka destekli öneriler.",
+      "cta": "İçgörüler Al"
+    },
+    "tradingAlerts": {
+      "title": "Alım Satım Uyarıları",
+      "description": "Piyasa hareketleri ve fırsatlar hakkında anlık bildirimler.",
+      "cta": "Uyarılar Oluştur"
+    }
+  },
+  "markets": {
+    "previousClose": "Önceki Kapanış",
+    "volume": "Hacim",
+    "dayRange": "Günlük Aralık",
+    "52wRange": "52H Aralık",
+    "todaysPerformance": "Bugünkü Performans",
+    "high": "En Yüksek",
+    "low": "En Düşük",
+    "open": "Açılış",
+    "close": "Kapanış",
+    "price": "Güncel Fiyat",
+    "marketCap": "Piyasa Değeri",
+    "peRatio": "F/K Oranı",
+    "eps": "HBK",
+    "dividend": "Temettü",
+    "yield": "Getiri",
+    "topGainers": "En Çok Kazandıranlar",
+    "topLosers": "En Çok Kaybedenler",
+    "mostActive": "En Aktif Olanlar",
+    "lastUpdated": "Son güncelleme"
+  },
+  "footer": {
+    "description": "Bilinçli finansal kararlar vermenize yardımcı olmak için gerçek zamanlı piyasa verileri ve yatırım araçları sağlıyoruz.",
+    "copyright": "StockTrack. Tüm hakları saklıdır.",
+    "sections": {
+      "products": "Ürünler",
+      "resources": "Kaynaklar",
+      "contact": "İletişim"
+    },
+    "socialLinks": {
+      "twitter": "Twitter",
+      "linkedin": "LinkedIn",
+      "facebook": "Facebook",
+      "instagram": "Instagram"
+    },
+    "resources": {
+      "marketNews": "Piyasa Haberleri",
+      "economicCalendar": "Ekonomik Takvim",
+      "learningCenter": "Öğrenim Merkezi",
+      "helpCenter": "Yardım Merkezi",
+      "apiDocumentation": "API Dökümantasyonu"
+    },
+    "contact": {
+      "email": "destek@stocktrack.com",
+      "phone": "+90 (212) 123 45 67",
+      "address": {
+        "line1": "Finans Caddesi No: 123",
+        "line2": "İstanbul, Türkiye 34000"
+      }
+    },
+    "legal": {
+      "termsOfService": "Kullanım Koşulları",
+      "privacyPolicy": "Gizlilik Politikası",
+      "cookiePolicy": "Çerez Politikası",
+      "disclaimer": "Yasal Uyarı",
+      "sitemap": "Site Haritası"
+    }
+  },
+  "errors": {
+    "generic": {
+      "title": "Hata",
+      "description": "Bir şeyler yanlış gitti. Lütfen daha sonra tekrar deneyin.",
+      "returnHome": "Ana Sayfaya Dön"
+    },
+    "notFound": {
+      "title": "Sayfa Bulunamadı",
+      "description": "Aradığınız kaynak kaldırılmış, adı değiştirilmiş veya geçici olarak kullanılamıyor olabilir.",
+      "returnHome": "Ana Sayfaya Dön",
+      "errorReference": "Hata Referansı",
+      "errorCode": "404_SAYFA_BULUNAMADI"
+    },
+    "forbidden": {
+      "title": "Erişim Reddedildi",
+      "description": "Bu kaynağa erişim izniniz yok.",
+      "returnHome": "Ana Sayfaya Dön",
+      "errorReference": "Hata Referansı",
+      "errorCode": "403_YASAK"
+    },
+    "serverError": {
+      "title": "Sunucu Hatası",
+      "description": "Sunucumuz isteğinizi işlerken bir hata ile karşılaştı. Lütfen daha sonra tekrar deneyin.",
+      "returnHome": "Ana Sayfaya Dön",
+      "errorReference": "Hata Referansı",
+      "errorCode": "500_SUNUCU_HATASI"
+    }
+  },
+  "pages": {
+    "home": {
+      "hero": {
+        "title": "Hisselerinizi güvenle takip edin",
+        "subtitle": "Bilinçli yatırım kararları vermek için gerçek zamanlı piyasa verileri, kişiselleştirilmiş izleme listeleri ve uzman görüşleri edinin.",
+        "buttonText": "Başlayın"
+      },
+      "featuredProducts": {
+        "title": "Ürünlerimiz",
+        "subtitle": "Piyasa analizi ve portföy yönetimi için güçlü araçlar",
+        "products": {
+          "explore": "Özellikleri Keşfedin",
+          "track": "Şimdi Takip Edin",
+          "insights": "İçgörüleri Alın",
+          "alerts": "Uyarılar Oluşturun"
+        }
+      },
+      "marketIndices": {
+        "title": "Piyasa Endeksleri",
+        "subtitle": "Önemli piyasa endekslerinin performansını takip edin",
+        "viewAll": "Tüm endeksleri görüntüle"
+      },
+      "economicEvents": {
+        "title": "Ekonomik Olaylar",
+        "subtitle": "Önemli ekonomik duyurular hakkında bilgi sahibi olun",
+        "viewAll": "Tüm olayları görüntüle"
+      },
+      "news": {
+        "title": "Son Haberler",
+        "subtitle": "Dünya genelinden piyasa haberleri ve güncellemeleri",
+        "viewAll": "Tüm haberleri görüntüle"
+      },
+      "topStocks": {
+        "title": "Öne Çıkan Hisseler",
+        "subtitle": "Bugünün piyasa hareketlileri",
+        "gainers": "En Çok Kazandıranlar",
+        "losers": "En Çok Kaybedenler",
+        "active": "En Aktif Hisseler",
+        "viewAll": "Tüm hisseleri görüntüle"
+      },
+      "insights": {
+        "title": "Yatırım İçgörüleri",
+        "subtitle": "Daha iyi yatırım kararları vermenize yardımcı olacak uzman analizleri ve eğitim içerikleri",
+        "viewAll": "Tüm içgörüleri görüntüle"
+      }
+    },
+    "products": {
+      "title": "Ürünlerimiz",
+      "subtitle": "Piyasada başarılı olmanıza yardımcı olacak araçlar"
+    },
+    "market": {
+      "title": "Piyasa Genel Görünümü",
+      "subtitle": "Günümüz piyasaları için analiz ve öngörüler"
+    },
+    "portfolioOptimization": {
+      "hero": {
+        "title": "Portföy Optimizasyonu",
+        "subtitle": "Gelişmiş araçlarımız ve algoritmalarımız ile yatırım portföyünüzü optimize edin."
+      },
+      "sections": {
+        "input": "Portföy Girdileri",
+        "output": "Optimizasyon Sonuçları",
+        "events": "Ekonomik Olaylar",
+        "news": "Güncel Piyasa Haberleri"
+      }
+    },
+    "news": {
+      "title": "Finans Haberleri",
+      "subtitle": "En son piyasa güncellemeleri ve finans haberleriyle bilgi sahibi olun",
+      "trending": "Gündem Olan Haberler",
+      "latest": "Son Makaleler",
+      "popular": "En Çok Okunan",
+      "categories": "Haber Kategorileri",
+      "sources": "Haber Kaynakları",
+      "search": "Haber makalelerini ara",
+      "filter": "Kategoriye göre filtrele"
+    },
+    "stocks": {
+      "title": "Hisse Keşif",
+      "subtitle": "Küresel piyasalardan hisseleri keşfedin ve analiz edin",
+      "gainersSummary": "Bugünün en iyi performans gösteren hisseleri",
+      "losersSummary": "Bugünün en kötü performans gösteren hisseleri",
+      "activeSummary": "Bugün en aktif işlem gören hisseler"
+    },
+    "insights": {
+      "title": "Yatırım İçgörüleri",
+      "subtitle": "Uzmanlardan öğrenin ve yatırım bilginizi geliştirin",
+      "featured": "Öne Çıkan Makaleler",
+      "latest": "Son İçgörüler",
+      "popular": "En Popüler",
+      "categories": "Makale Kategorileri",
+      "topics": "Güncel Konular",
+      "search": "İçgörüleri ara",
+      "filter": "Konuya göre filtrele"
+    }
+  },
+  "portfolioOptimization": {
+    "input": {
+      "title": "Portföy Ayarları",
+      "subtitle": "Optimizasyon parametrelerinizi yapılandırın",
+      "exchange": {
+        "label": "Borsa",
+        "placeholder": "Bir borsa seçin",
+        "description": "Yatırım yapmak istediğiniz borsayı seçin"
+      },
+      "portfolioDate": {
+        "label": "Portföy Tarihi",
+        "placeholder": "Bir tarih seçin",
+        "description": "Portföy optimizasyonu için referans tarihi",
+        "ariaLabel": "Portföy oluşturma tarihini seçin"
+      },
+      "trainingPeriod": {
+        "label": "Geçmiş Analiz Dönemi",
+        "placeholder": "Analiz dönemi seçin",
+        "description": "Analiz için {days} günlük geçmiş veri kullanılıyor",
+        "ariaLabel": "Geçmiş analiz dönemini ayarlayın",
+        "inputAriaLabel": "Analiz dönemini gün olarak girin"
+      },
+      "strategy": {
+        "label": "Optimizasyon Stratejisi",
+        "description": "Yatırım hedeflerinize en uygun yaklaşımı seçin"
+      },
+      "strategies": {
+        "maxReturn": {
+          "name": "Maksimum Getiri",
+          "description": "Risk sınırlaması olmadan beklenen portföy getirilerini maksimize et"
+        },
+        "minRisk": {
+          "name": "Minimum Risk",
+          "description": "Daha istikrarlı bir yatırım için portföy oynaklığını en aza indir"
+        },
+        "sharpeRatio": {
+          "name": "Optimal Denge",
+          "description": "Risk ve getiri arasında en iyi dengeyi bul (Sharpe Oranı)"
+        },
+        "customWeight": {
+          "name": "Özel Ağırlıklar",
+          "description": "Kendi varlık dağılım yüzdelerinizi tanımlayın"
+        }
+      },
+      "numberOfAssets": {
+        "label": "Varlık Sayısı",
+        "description": "Optimize edilmiş portföyünüze kaç varlık dahil edilecek",
+        "ariaLabel": "Varlık sayısını ayarlayın",
+        "inputAriaLabel": "Varlık sayısını girin"
+      },
+      "riskTolerance": {
+        "label": "Risk Toleransı",
+        "description": "Daha yüksek değerler, istikrardan ziyade getirilere öncelik verir"
+      },
+      "customWeights": {
+        "title": "Özel Varlık Ağırlıkları",
+        "description": "Her varlık için yüzde dağılımı belirtin",
+        "comingSoon": "Yakında"
+      },
+      "showAdvancedOptions": "Gelişmiş Seçenekleri Göster",
+      "hideAdvancedOptions": "Gelişmiş Seçenekleri Gizle",
+      "optimizeButton": "Portföyü Optimize Et",
+      "tooltips": {
+        "exchangeInfo": "Borsa hakkında bilgi",
+        "dateInfo": "Portföy tarihi hakkında bilgi",
+        "periodInfo": "Geçmiş analiz dönemi hakkında bilgi",
+        "strategyInfo": "Optimizasyon stratejileri hakkında bilgi",
+        "assetsInfo": "Varlık sayısı hakkında bilgi"
+      },
+      "days": "gün",
+      "assets": "varlık"
+    },
+    "output": {
+      "title": "Optimizasyon Sonuçları",
+      "subtitle": "Seçilen parametrelere dayalı optimize edilmiş portföyünüz",
+      "optimizedUsing": "Kullanılan optimizasyon",
+      "expectedReturn": "Beklenen Yıllık Getiri",
+      "volatility": "Volatilite",
+      "metrics": {
+        "expectedReturn": "Beklenen Getiri",
+        "volatility": "Volatilite",
+        "sharpeRatio": "Sharpe Oranı",
+        "sortinoRatio": "Sortino Oranı"
+      },
+      "strategies": {
+        "maxReturn": "Maksimum Getiri",
+        "minRisk": "Minimum Risk",
+        "sharpeRatio": "Optimal Denge",
+        "customWeight": "Özel Ağırlıklar",
+        "unknown": "Bilinmeyen Strateji"
+      },
+      "assetAllocation": {
+        "title": "Varlık Dağılımı",
+        "description": "Yatırımınızın önerilen dağılımı"
+      },
+      "riskDistribution": {
+        "title": "Risk Dağılımı",
+        "description": "Varlık başına risk maruziyeti"
+      },
+      "backtesting": {
+        "title": "Geçmiş Performans",
+        "description": "Bu portföyün nasıl performans göstereceği",
+        "1year": "1 Yıl",
+        "3year": "3 Yıl",
+        "5year": "5 Yıl"
+      },
+      "assets": {
+        "title": "Varlık Detayları",
+        "description": "Her varlık hakkında detaylı bilgi",
+        "symbol": "Sembol",
+        "name": "İsim",
+        "weight": "Ağırlık",
+        "expectedReturn": "Getiri",
+        "volatility": "Volatilite"
+      },
+      "loading": "Optimizasyon sonuçları yükleniyor...",
+      "actions": {
+        "print": "Yazdır",
+        "download": "PDF İndir",
+        "share": "Paylaş"
+      },
+      "tabs": {
+        "allocation": "Dağılım",
+        "risk": "Risk",
+        "history": "Geçmiş",
+        "assets": "Varlıklar"
+      },
+      "errors": {
+        "title": "Sonuçlar Yüklenemedi",
+        "dataFetch": "Optimizasyon sonuçları yüklenemedi. Lütfen tekrar deneyin.",
+        "unknown": "Bilinmeyen bir hata oluştu.",
+        "retry": "Tekrar Dene"
+      },
+      "shareDialog": {
+        "title": "Portföy Optimizasyon Sonuçları",
+        "text": "Optimize edilmiş yatırım portföyüme göz atın",
+        "notSupported": "Paylaşım bu tarayıcıda desteklenmiyor"
+      },
+      "disclaimer": "Geçmiş performans, gelecekteki sonuçların göstergesi değildir. Bu portföy optimizasyonu, geçmiş verilere ve matematiksel modellere dayanmaktadır."
+    }
+  },
+  "registerForm": {
+    "title": "StockTrack'a Katılın",
+    "subtitle": "Yatırımlarınızı daha akıllı yönetmek için dakikalar içinde hesabınızı oluşturun.",
+    "email": {
+      "label": "E-posta adresi",
+      "description": "Giriş ve bildirimler için kullanılır. Bilgileriniz gizli tutulur.",
+      "placeholder": "E-posta adresinizi girin"
+    },
+    "username": {
+      "label": "Kullanıcı adı",
+      "description": "Profilinizde görünecek, kolay hatırlanabilir bir kullanıcı adı seçin.",
+      "placeholder": "Kullanıcı adınızı girin"
+    },
+    "fullName": {
+      "label": "Ad Soyad (isteğe bağlı)",
+      "description": "Profilinizi kişiselleştirmek için adınızı ve soyadınızı ekleyin.",
+      "placeholder": "Adınızı ve soyadınızı yazın"
+    },
+    "password": {
+      "label": "Şifre",
+      "description": "En az 8 karakter, bir büyük harf, bir rakam ve bir özel karakter içermelidir.",
+      "placeholder": "Şifrenizi oluşturun"
+    },
+    "confirmPassword": {
+      "label": "Şifreyi tekrar girin",
+      "description": "Güvenliğiniz için şifrenizi tekrar girin.",
+      "placeholder": "Şifrenizi tekrar yazın"
+    },
+    "registerButton": "Hesabımı Oluştur",
+    "successMessage": "Kayıt başarılı! Şimdi giriş yapabilirsiniz.",
+    "errorMessages": {
+      "unknownError": "Bir hata oluştu. Lütfen tekrar deneyin veya destek ekibimize ulaşın."
+    }
+  },
+  "loginForm": {
+    "title": "StockTrack'a Giriş Yapın",
+    "subtitle": "Kişiselleştirilmiş panelinize erişin ve yatırımlarınızı yönetin.",
+    "username": {
+      "label": "Kullanıcı Adı",
+      "placeholder": "Kullanıcı adınızı girin"
+    },
+    "password": {
+      "label": "Şifre",
+      "placeholder": "Şifrenizi girin"
+    },
+    "loginButton": "Giriş Yap",
+    "successMessage": "Giriş başarılı! Yönlendiriliyorsunuz...",
+    "errorMessages": {
+      "invalidCredentials": "Kullanıcı adı veya şifre hatalı. Lütfen tekrar deneyin.",
+      "unknownError": "Bir hata oluştu. Lütfen tekrar deneyin veya destek ile iletişime geçin."
+    }
+  }
+}

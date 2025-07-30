@@ -1,0 +1,34 @@
+# Alembic Migrations Guide
+
+This directory contains the Alembic migration environment and migration scripts for the backend_v3 project.
+
+## Usage
+
+### 1. Initial Setup
+- Make sure you have copied `alembic.ini.example` to `alembic.ini` and updated the database connection string as needed.
+
+### 2. Applying Migrations (Recommended for Most Users)
+- To create all tables in a fresh (empty) database, simply run:
+
+```sh
+poetry run alembic upgrade head
+```
+- This will apply all existing migration scripts and bring your database schema up to date.
+
+### 3. Creating a New Migration (For Developers)
+- If you have made changes to the models and want to generate a new migration script, run:
+
+```sh
+poetry run alembic revision --autogenerate -m "Describe your change"
+```
+- Then apply the new migration as above:
+
+```sh
+poetry run alembic upgrade head
+```
+
+## Notes
+- Do **not** run `alembic revision --autogenerate` unless you are developing and have made changes to the models/schema.
+- For most users, only `alembic upgrade head` is needed to initialize or update the database.
+
+For more details, see the main project README.

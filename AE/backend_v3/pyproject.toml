@@ -1,0 +1,37 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "hsytp-api"
+version = "1.0.0"
+description = "High-performance API for financial data and AI models"
+authors = ["Abdulkadir Eyigül <mr.eyigul@gmail.com>"]
+packages = [{ include = "app" }]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<4.0"
+fastapi = "^0.100.0"
+uvicorn = "^0.34.2"
+fastcore = { git = "https://github.com/abdulkadireyigul/fastcore.git", branch = "main" }
+sqlalchemy = "^2.0.40"
+email-validator = "^2.2.0"
+alembic = "^1.15.2"
+apscheduler = "^3.11.0"
+yfinance = "^0.2.61"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.9.1"
+isort = "^5.12.0"
+ruff = "^0.0.292"
+psycopg2-binary = "^2.9.10"
+
+[tool.black]
+line-length = 88
+target-version = ["py38"]
+
+[tool.isort]
+profile = "black"
+
+[tool.ruff]
+line-length = 88

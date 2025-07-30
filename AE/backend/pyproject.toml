@@ -1,0 +1,121 @@
+[tool.poetry]
+name = "backend"
+version = "0.1.0"
+description = "Financial Data API"
+authors = ["Abdulkadir Eyigül <mr.eyigul@gmail.com>"]
+packages = [{ include = "app" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.104.0"
+uvicorn = {extras = ["standard"], version = "^0.23.2"}
+sqlalchemy = {extras = ["asyncio"], version = "^2.0.23"}
+psycopg = {extras = ["binary", "pool"], version = "^3.1.12"}
+pydantic = {extras = ["email"], version = "^2.5.2"}
+email-validator = "^2.1.0"
+pydantic-settings = "^2.1.0"
+alembic = "^1.12.1"
+httpx = "^0.25.0"
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+tenacity = "^8.2.3"
+redis = {extras = ["hiredis"], version = "^5.0.1"}
+python-multipart = "^0.0.6"
+yfinance = "^0.2.55"
+matplotlib = "^3.10.1"
+pandas = "^2.2.3"
+schedule = "^1.2.2"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.2"
+pytest-asyncio = "^0.21.1"
+aiosqlite = "^0.19.0"
+pytest-cov = "^4.1.0"
+ruff = "^0.1.4"
+black = "^23.10.1"
+pre-commit = "^4.2.0"
+isort = "^6.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+markers = [
+    "windows: marks tests that are specific to Windows",
+]
+
+# Black configuration
+[tool.black]
+line-length = 88
+target-version = ['py311']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+
+# Ruff configuration
+[tool.ruff]
+# Common settings go here
+line-length = 88
+target-version = "py311"
+
+# Move the deprecated top-level settings into the lint section
+[tool.ruff.lint]
+# Remove "I" from the select list to disable import sorting in Ruff
+select = ["E", "F"]  # Removed "I" here
+ignore = []
+fixable = ["A", "B", "C", "D", "E", "F"]  # You can remove "I" here too
+unfixable = []
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+# Exclude files and directories
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".hg",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "venv",
+    "alembic",
+]
+
+# Delete or comment out the isort section in ruff config since we're not using it
+# [tool.ruff.lint.isort]
+# known-third-party = ["fastapi", "pydantic", "sqlalchemy", "starlette", "pytest"]
+
+# Add explicit isort configuration
+[tool.isort]
+profile = "black"
+line_length = 88
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+ensure_newline_before_comments = true
+combine_as_imports = true

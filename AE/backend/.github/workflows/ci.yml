@@ -1,0 +1,97 @@
+name: Financial API CI
+
+on:
+  push:
+    branches: [main, master, dev, abdulkadir]
+    paths:
+      - 'AE/backend/**'  # Only trigger on backend changes
+  pull_request:
+    branches: [main, master, dev, abdulkadir]
+    paths:
+      - 'AE/backend/**'  # Only trigger on backend changes
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: AE/backend  # Set working directory for all run steps
+    services:
+      postgres:
+        image: postgres:14
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: test_financial_data
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+      redis:
+        image: redis:7
+        ports:
+          - 6379:6379
+        options: >-
+          --health-cmd "redis-cli ping"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install Poetry
+        uses: snok/install-poetry@v1
+        with:
+          version: 1.5.1
+
+      - name: Cache Poetry dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pypoetry
+          key: ${{ runner.os }}-poetry-${{ hashFiles('**/poetry.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-poetry-
+
+      - name: Install dependencies
+        run: poetry install
+
+      - name: Lint with ruff
+        run: |
+          pip install ruff
+          ruff check app tests
+
+      - name: Check code formatting with black
+        run: |
+          pip install black
+          black --check app tests
+
+      - name: Check import sorting with isort
+        run: |
+          pip install isort
+          isort --check app tests
+
+      - name: Run tests
+        env:
+          POSTGRES_SERVER: localhost
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: test_financial_data
+          REDIS_HOST: localhost
+        run: |
+          poetry run pytest --cov=app --cov-report=xml
+
+      - name: Upload coverage reports
+        uses: codecov/codecov-action@v3
+        with:
+          file: ./coverage.xml
+          fail_ci_if_error: false

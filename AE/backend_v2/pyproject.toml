@@ -1,0 +1,112 @@
+[tool.poetry]
+name = "hsytp-api"
+version = "1.0.0"
+description = "High-performance API for financial data and AI models"
+authors = ["Abdulkadir Eyigül <mr.eyigul@gmail.com>"]
+packages = [{ include = "app" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.104.0"
+uvicorn = "^0.23.2"
+gunicorn = "^21.2.0"
+sqlalchemy = "^2.0.20"
+alembic = "^1.12.0"
+psycopg = {extras = ["binary", "pool"], version = "^3.1.12"}
+pydantic = {extras = ["email"], version = "^2.5.2"}
+pydantic-settings = "^2.8.1"
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+pytz = "^2023.3"
+python-multipart = "^0.0.6"
+redis = "^5.0.0"
+prometheus-client = "^0.17.1"
+opentelemetry-api = "^1.20.0"
+opentelemetry-sdk = "^1.20.0"
+opentelemetry-exporter-otlp = "^1.20.0"
+opentelemetry-instrumentation-fastapi = "^0.41b0"
+opentelemetry-instrumentation-sqlalchemy = "^0.41b0"
+opentelemetry-instrumentation-redis = "^0.41b0"
+opentelemetry-instrumentation-requests = "^0.41b0"
+email-validator = "^2.0.0"
+tenacity = "^8.2.3"
+httpx = "^0.24.1"
+python-dotenv = "^1.0.0"
+asyncpg = "^0.30.0"
+aiosqlite = "^0.21.0"
+sqlalchemy-utils = "^0.41.1"  # Added sqlalchemy-utils
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.1"
+pytest-asyncio = "^0.21.1"
+pytest-cov = "^4.1.0"
+black = "^23.7.0"
+isort = "^5.12.0"
+flake8 = "^6.1.0"
+mypy = "^1.5.1"
+pre-commit = "^3.4.0"
+autoflake = "^2.2.1"
+alembic-autogenerate-enums = "^0.1.2"
+Faker = "^19.6.1"
+
+[tool.poetry.scripts]
+start = "app.main:app"
+
+[tool.black]
+line-length = 88
+target-version = ['py39']
+include = '\.pyi?$'
+exclude = '''
+(
+  /(
+      \.eggs
+    | \.git
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | _build
+    | buck-out
+    | build
+    | dist
+  )/
+)
+'''
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+line_length = 88
+
+[tool.mypy]
+python_version = "3.10"
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_return_any = true
+warn_unreachable = true
+disallow_any_generics = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+disallow_untyped_decorators = true
+check_untyped_defs = true
+no_implicit_optional = true
+strict_optional = true
+
+[[tool.mypy.overrides]]
+module = [
+    "sqlalchemy.*",
+    "alembic.*",
+    "pytz.*",
+    "jose.*",
+    "passlib.*",
+    "prometheus_client.*",
+    "opentelemetry.*",
+]
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+python_functions = "test_*"
+python_classes = "Test*"
+asyncio_mode = "auto"

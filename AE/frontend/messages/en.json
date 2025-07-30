@@ -1,0 +1,530 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "Error!",
+    "viewAll": "View All",
+    "dateTime": {
+      "today": "Today",
+      "yesterday": "Yesterday",
+      "tomorrow": "Tomorrow",
+      "shortDate": "{date, date, short}",
+      "longDate": "{date, date, long}",
+      "shortTime": "{time, time, short}",
+      "shortDateTime": "{date, date, short} at {date, time, short}"
+    },
+    "search": {
+      "placeholder": "Search stocks, markets...",
+      "button": "Search",
+      "clear": "Clear search",
+      "noResults": "No results found",
+      "types": {
+        "stock": "Stock",
+        "index": "Index",
+        "crypto": "Cryptocurrency",
+        "etf": "ETF"
+      }
+    },
+    "markets": {
+      "change": "Change",
+      "currencies": {
+        "USD": "USD",
+        "EUR": "EUR",
+        "GBP": "GBP",
+        "JPY": "JPY",
+        "CNY": "CNY"
+      },
+      "countries": {
+        "USA": "USA",
+        "UK": "UK",
+        "EU": "Europe",
+        "Japan": "Japan",
+        "China": "China",
+        "Germany": "Germany",
+        "France": "France"
+      }
+    },
+    "economicEvents": {
+      "previous": "Prev",
+      "forecast": "Fcst",
+      "actual": "Act",
+      "impact": {
+        "low": "Low",
+        "medium": "Medium",
+        "high": "High"
+      }
+    },
+    "stocks": {
+      "volume": "Vol",
+      "price": "Price",
+      "change": "Change",
+      "high": "High",
+      "low": "Low",
+      "open": "Open",
+      "close": "Close",
+      "marketCap": "Market Cap",
+      "peRatio": "P/E Ratio",
+      "dividend": "Dividend",
+      "yield": "Yield",
+      "eps": "EPS"
+    },
+    "news": {
+      "readMore": "Read more",
+      "source": "Source",
+      "publishedOn": "Published on",
+      "relatedNews": "Related news",
+      "categories": {
+        "business": "Business",
+        "technology": "Technology",
+        "markets": "Markets",
+        "economy": "Economy",
+        "politics": "Politics",
+        "world": "World"
+      }
+    },
+    "insights": {
+      "readArticle": "Read article",
+      "publishedOn": "Published on",
+      "relatedArticles": "Related articles",
+      "categories": {
+        "investing": "Investing",
+        "trading": "Trading",
+        "analysis": "Analysis",
+        "markets": "Markets",
+        "portfolio": "Portfolio",
+        "personal": "Personal Finance",
+        "education": "Education"
+      }
+    }
+  },
+  "auth": {
+    "login": "Login",
+    "register": "Register",
+    "logout": "Logout"
+  },
+  "navigation": {
+    "home": "Home",
+    "products": "Products",
+    "market": "Market",
+    "news": "News",
+    "children": {
+      "portfolioOptimization": {
+        "title": "Portfolio Optimization",
+        "description": "Maximize returns and minimize risk with our advanced portfolio optimization tools."
+      },
+      "marketAnalysis": {
+        "title": "Market Analysis",
+        "description": "Real-time market data and comprehensive stock analysis tools."
+      },
+      "investmentInsights": {
+        "title": "Investment Insights",
+        "description": "AI-powered recommendations based on your investment goals."
+      },
+      "tradingAlerts": {
+        "title": "Trading Alerts",
+        "description": "Instant notifications on market movements and opportunities."
+      }
+    }
+  },
+  "products": {
+    "portfolioOptimization": {
+      "title": "Portfolio Optimization",
+      "description": "Maximize returns and minimize risk with our advanced portfolio optimization tools.",
+      "cta": "Optimize Your Portfolio"
+    },
+    "marketAnalysis": {
+      "title": "Market Analysis",
+      "description": "Real-time market data and comprehensive stock analysis tools.",
+      "cta": "Explore Market Data"
+    },
+    "portfolioTracker": {
+      "title": "Portfolio Tracker",
+      "description": "Monitor and optimize your investments with smart portfolio tools.",
+      "cta": "Track Your Portfolio"
+    },
+    "investmentInsights": {
+      "title": "Investment Insights",
+      "description": "AI-powered recommendations based on your investment goals.",
+      "cta": "Get Insights"
+    },
+    "tradingAlerts": {
+      "title": "Trading Alerts",
+      "description": "Instant notifications on market movements and opportunities.",
+      "cta": "Set Alerts"
+    }
+  },
+  "markets": {
+    "previousClose": "Previous Close",
+    "volume": "Volume",
+    "dayRange": "Day Range",
+    "52wRange": "52W Range",
+    "todaysPerformance": "Today's Performance",
+    "high": "High",
+    "low": "Low",
+    "open": "Open",
+    "close": "Close",
+    "price": "Current Price",
+    "marketCap": "Market Cap",
+    "peRatio": "P/E Ratio",
+    "eps": "EPS",
+    "dividend": "Dividend",
+    "yield": "Yield",
+    "topGainers": "Top Gainers",
+    "topLosers": "Top Losers",
+    "mostActive": "Most Active",
+    "lastUpdated": "Last updated"
+  },
+  "footer": {
+    "description": "Providing real-time market data and investment tools to help you make informed financial decisions.",
+    "copyright": "StockTrack. All rights reserved.",
+    "sections": {
+      "products": "Products",
+      "resources": "Resources",
+      "contact": "Contact"
+    },
+    "socialLinks": {
+      "twitter": "Twitter",
+      "linkedin": "LinkedIn",
+      "facebook": "Facebook",
+      "instagram": "Instagram"
+    },
+    "resources": {
+      "marketNews": "Market News",
+      "economicCalendar": "Economic Calendar",
+      "learningCenter": "Learning Center",
+      "helpCenter": "Help Center",
+      "apiDocumentation": "API Documentation"
+    },
+    "contact": {
+      "email": "support@stocktrack.com",
+      "phone": "+1 (555) 123-4567",
+      "address": {
+        "line1": "123 Finance Street",
+        "line2": "New York, NY 10001"
+      }
+    },
+    "legal": {
+      "termsOfService": "Terms of Service",
+      "privacyPolicy": "Privacy Policy",
+      "cookiePolicy": "Cookie Policy",
+      "disclaimer": "Disclaimer",
+      "sitemap": "Sitemap"
+    }
+  },
+  "errors": {
+    "generic": {
+      "title": "Error",
+      "description": "Something went wrong. Please try again later.",
+      "returnHome": "Return to Home Page"
+    },
+    "notFound": {
+      "title": "Page Not Found",
+      "description": "The resource you are looking for might have been removed, had its name changed, or is temporarily unavailable.",
+      "returnHome": "Return to Home Page",
+      "errorReference": "Error Reference",
+      "errorCode": "404_PAGE_NOT_FOUND"
+    },
+    "forbidden": {
+      "title": "Access Denied",
+      "description": "You don't have permission to access this resource.",
+      "returnHome": "Return to Home Page",
+      "errorReference": "Error Reference",
+      "errorCode": "403_FORBIDDEN"
+    },
+    "serverError": {
+      "title": "Server Error",
+      "description": "Our server encountered an error processing your request. Please try again later.",
+      "returnHome": "Return to Home Page",
+      "errorReference": "Error Reference",
+      "errorCode": "500_SERVER_ERROR"
+    }
+  },
+  "pages": {
+    "home": {
+      "hero": {
+        "title": "Track stocks with confidence",
+        "subtitle": "Get real-time market data, personalized watchlists, and expert insights to make informed investment decisions.",
+        "buttonText": "Get Started"
+      },
+      "featuredProducts": {
+        "title": "Our Products",
+        "subtitle": "Powerful tools for market analysis and portfolio management",
+        "products": {
+          "explore": "Explore Features",
+          "track": "Track Now",
+          "insights": "Get Insights",
+          "alerts": "Set Alerts"
+        }
+      },
+      "marketIndices": {
+        "title": "Market Indices",
+        "subtitle": "Track the performance of major market indices",
+        "viewAll": "View all indices"
+      },
+      "economicEvents": {
+        "title": "Economic Events",
+        "subtitle": "Stay informed about important economic announcements",
+        "viewAll": "View all events"
+      },
+      "news": {
+        "title": "Latest News",
+        "subtitle": "Market news and updates from around the world",
+        "viewAll": "View all news"
+      },
+      "topStocks": {
+        "title": "Top Stocks",
+        "subtitle": "Market movers for today",
+        "gainers": "Top Gainers",
+        "losers": "Top Losers",
+        "active": "Most Active",
+        "viewAll": "View all stocks"
+      },
+      "insights": {
+        "title": "Investing Insights",
+        "subtitle": "Expert analysis and educational content to help you make better investment decisions",
+        "viewAll": "View all insights"
+      }
+    },
+    "products": {
+      "title": "Our Products",
+      "subtitle": "Tools to help you succeed in the market"
+    },
+    "market": {
+      "title": "Market Overview",
+      "subtitle": "Analysis and insights for today's markets"
+    },
+    "portfolioOptimization": {
+      "hero": {
+        "title": "Portfolio Optimization",
+        "subtitle": "Optimize your investment portfolio with our advanced tools and algorithms."
+      },
+      "sections": {
+        "input": "Portfolio Input",
+        "output": "Optimization Results",
+        "events": "Economic Events",
+        "news": "Latest Market News"
+      }
+    },
+    "news": {
+      "title": "Financial News",
+      "subtitle": "Stay informed with the latest market updates and financial news",
+      "trending": "Trending News",
+      "latest": "Latest Articles",
+      "popular": "Most Read",
+      "categories": "News Categories",
+      "sources": "News Sources",
+      "search": "Search news articles",
+      "filter": "Filter by category"
+    },
+    "stocks": {
+      "title": "Stock Explorer",
+      "subtitle": "Discover and analyze stocks from global markets",
+      "gainersSummary": "Today's top performing stocks",
+      "losersSummary": "Today's worst performing stocks",
+      "activeSummary": "Most actively traded stocks today"
+    },
+    "insights": {
+      "title": "Investment Insights",
+      "subtitle": "Learn from experts and improve your investing knowledge",
+      "featured": "Featured Articles",
+      "latest": "Latest Insights",
+      "popular": "Most Popular",
+      "categories": "Article Categories",
+      "topics": "Trending Topics",
+      "search": "Search insights",
+      "filter": "Filter by topic"
+    }
+  },
+  "portfolioOptimization": {
+    "input": {
+      "title": "Portfolio Settings",
+      "subtitle": "Configure your optimization parameters",
+      "exchange": {
+        "label": "Market Exchange",
+        "placeholder": "Select an exchange",
+        "description": "Choose the market exchange where you want to invest"
+      },
+      "portfolioDate": {
+        "label": "Portfolio Date",
+        "placeholder": "Select a date",
+        "description": "The reference date for your portfolio optimization",
+        "ariaLabel": "Select portfolio creation date"
+      },
+      "trainingPeriod": {
+        "label": "Historical Analysis Period",
+        "placeholder": "Select analysis period",
+        "description": "Using {days} days of historical data for analysis",
+        "ariaLabel": "Adjust historical analysis period",
+        "inputAriaLabel": "Enter analysis period in days"
+      },
+      "strategy": {
+        "label": "Optimization Strategy",
+        "description": "Select the approach that best matches your investment goals"
+      },
+      "strategies": {
+        "maxReturn": {
+          "name": "Maximum Return",
+          "description": "Maximize expected portfolio returns without constraints on risk"
+        },
+        "minRisk": {
+          "name": "Minimum Risk",
+          "description": "Minimize portfolio volatility for a more stable investment"
+        },
+        "sharpeRatio": {
+          "name": "Optimal Balance",
+          "description": "Find the best balance between risk and return (Sharpe Ratio)"
+        },
+        "customWeight": {
+          "name": "Custom Weights",
+          "description": "Define your own asset allocation percentages"
+        }
+      },
+      "numberOfAssets": {
+        "label": "Number of Assets",
+        "description": "How many assets to include in your optimized portfolio",
+        "ariaLabel": "Adjust number of assets",
+        "inputAriaLabel": "Enter number of assets"
+      },
+      "riskTolerance": {
+        "label": "Risk Tolerance",
+        "description": "Higher values prioritize returns over stability"
+      },
+      "customWeights": {
+        "title": "Custom Asset Weights",
+        "description": "Specify the percentage allocation for each asset",
+        "comingSoon": "Coming Soon"
+      },
+      "showAdvancedOptions": "Show Advanced Options",
+      "hideAdvancedOptions": "Hide Advanced Options",
+      "optimizeButton": "Optimize Portfolio",
+      "tooltips": {
+        "exchangeInfo": "Information about market exchange",
+        "dateInfo": "Information about portfolio date",
+        "periodInfo": "Information about historical analysis period",
+        "strategyInfo": "Information about optimization strategies",
+        "assetsInfo": "Information about number of assets"
+      },
+      "days": "days",
+      "assets": "assets"
+    },
+    "output": {
+      "title": "Optimization Results",
+      "subtitle": "Your optimized portfolio based on selected parameters",
+      "optimizedUsing": "Optimized using",
+      "expectedReturn": "Expected Annual Return",
+      "volatility": "Volatility",
+      "metrics": {
+        "expectedReturn": "Expected Return",
+        "volatility": "Volatility",
+        "sharpeRatio": "Sharpe Ratio",
+        "sortinoRatio": "Sortino Ratio"
+      },
+      "strategies": {
+        "maxReturn": "Maximum Return",
+        "minRisk": "Minimum Risk",
+        "sharpeRatio": "Optimal Balance",
+        "customWeight": "Custom Weights",
+        "unknown": "Unknown Strategy"
+      },
+      "assetAllocation": {
+        "title": "Asset Allocation",
+        "description": "Recommended distribution of your investment"
+      },
+      "riskDistribution": {
+        "title": "Risk Distribution",
+        "description": "Risk exposure by asset"
+      },
+      "backtesting": {
+        "title": "Historical Performance",
+        "description": "How this portfolio would have performed",
+        "1year": "1 Year",
+        "3year": "3 Years",
+        "5year": "5 Years"
+      },
+      "assets": {
+        "title": "Assets Breakdown",
+        "description": "Detailed information about each asset",
+        "symbol": "Symbol",
+        "name": "Name",
+        "weight": "Weight",
+        "expectedReturn": "Return",
+        "volatility": "Volatility"
+      },
+      "loading": "Loading optimization results...",
+      "actions": {
+        "print": "Print",
+        "download": "Download PDF",
+        "share": "Share"
+      },
+      "tabs": {
+        "allocation": "Allocation",
+        "risk": "Risk",
+        "history": "History",
+        "assets": "Assets"
+      },
+      "errors": {
+        "title": "Error Loading Results",
+        "dataFetch": "Failed to load optimization results. Please try again.",
+        "unknown": "An unknown error occurred.",
+        "retry": "Retry"
+      },
+      "shareDialog": {
+        "title": "Portfolio Optimization Results",
+        "text": "Check out my optimized investment portfolio",
+        "notSupported": "Sharing is not supported on this browser"
+      },
+      "disclaimer": "Past performance is not indicative of future results. This portfolio optimization is based on historical data and mathematical models."
+    }
+  },
+  "registerForm": {
+    "title": "Join StockTrack",
+    "subtitle": "Create your account in minutes and start managing your investments smarter.",
+    "email": {
+      "label": "Email address",
+      "description": "Used for login and notifications. Your information is kept private.",
+      "placeholder": "Enter your email address"
+    },
+    "username": {
+      "label": "Username",
+      "description": "Choose a memorable username that will appear on your profile.",
+      "placeholder": "Enter your username"
+    },
+    "fullName": {
+      "label": "Full name (optional)",
+      "description": "Add your full name to personalize your profile.",
+      "placeholder": "Type your full name"
+    },
+    "password": {
+      "label": "Password",
+      "description": "Must be at least 8 characters, with an uppercase letter, a number, and a special character.",
+      "placeholder": "Create your password"
+    },
+    "confirmPassword": {
+      "label": "Confirm password",
+      "description": "For your security, please re-enter your password.",
+      "placeholder": "Re-enter your password"
+    },
+    "registerButton": "Create My Account",
+    "successMessage": "Registration successful! You can now log in.",
+    "errorMessages": {
+      "unknownError": "An error occurred. Please try again or contact our support team."
+    }
+  },
+  "loginForm": {
+    "title": "Sign in to StockTrack",
+    "subtitle": "Access your personalized dashboard and manage your investments.",
+    "username": {
+      "label": "Username",
+      "placeholder": "Enter your username"
+    },
+    "password": {
+      "label": "Password",
+      "placeholder": "Enter your password"
+    },
+    "loginButton": "Log In",
+    "successMessage": "Login successful! Redirecting...",
+    "errorMessages": {
+      "invalidCredentials": "Invalid username or password. Please try again.",
+      "unknownError": "An error occurred. Please try again or contact support."
+    }
+  }
+}

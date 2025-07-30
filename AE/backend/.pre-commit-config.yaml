@@ -1,0 +1,32 @@
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+    -   id: trailing-whitespace
+        files: ^AE/backend/
+        stages: [pre-commit]
+    -   id: end-of-file-fixer
+        files: ^AE/backend/
+        stages: [pre-commit]
+    -   id: check-yaml
+        files: ^AE/backend/
+        stages: [pre-commit]
+
+-   repo: https://github.com/psf/black
+    rev: 25.1.0
+    hooks:
+    -   id: black
+        files: ^AE/backend/
+
+-   repo: https://github.com/charliermarsh/ruff-pre-commit
+    rev: v0.11.0
+    hooks:
+    -   id: ruff
+        args: [--fix]
+        files: ^AE/backend/
+
+-   repo: https://github.com/pycqa/isort
+    rev: 6.0.1
+    hooks:
+    -   id: isort
+        files: ^AE/backend/

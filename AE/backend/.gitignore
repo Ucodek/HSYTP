@@ -1,0 +1,77 @@
+# Environment variables
+.env
+.env.local
+.env.development
+.env.production
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+pythonenv*/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Test coverage
+.coverage
+coverage.xml
+htmlcov/
+
+# IDE files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+.vim/
+*.swp
+*.swo
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+logs/
+*.log
+
+# Cache directories
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# Redis dump
+*.rdb
+
+# Generated media files
+media/
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# If you're using Docker for development
+docker-data/
+
+# If you're not versioning Poetry's lock file
+poetry.lock
+
+# Python profiling
+*.prof
+
+# Alembic revision-specific exclusions
+migrations/versions/*.py
+
+# CDK context and assets
+cdk.context.json
+cdk.out/
